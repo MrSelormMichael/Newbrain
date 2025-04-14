@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewBrain - Organic Ghanaian Foods</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="text-danger">New</span><span class="text-warning">Brain</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Products</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact_us.html">Contact Us</a>
+                    </li>        
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">            
+                <div class="carousel-caption">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-12 col-12">
+                            <div class="banner-info animate__animated animate__fadeInLeft">
+                                <h5>Organic Food is <br> Our Trademark</h5>
+                                <p>We take pride in being a Ghanaian food production company specializing in crafting authentic products, including coconut oil, pepper sauce (Shito), palm oil, honey, and peanut butter.</p>
+                                <a href="#" class="btn mt-3">Let's Feast</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-12 col-12">
+                            <div class="imgBox">
+                                <img src="images/amy-shamblen-bqjyFm32HDM-unsplash.jpg" class="img-fluid animate__animated animate__fadeInRight" alt="Organic Food">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">           
+                <div class="carousel-caption">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-12 col-12">
+                            <div class="banner-info animate__animated animate__fadeInLeft">
+                                <h5>Tasty & Healthy <br> Organic Food</h5>
+                                <p>Looking for some good Shito, Coconut oil, Palm oil or Peanut butter, you came to the right place.</p>
+                                <a href="#" class="btn mt-3">Let's Feast</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-12 col-12">
+                            <div class="imgBox">
+                                <img src="images/element5-digital-CpBBsda2eRI-unsplash.jpg" class="img-fluid animate__animated animate__fadeInRight" alt="Healthy Food">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-12 col-12">
+                            <div class="banner-info animate__animated animate__fadeInLeft">
+                                <h5>Fresh meets Healthy</h5>
+                                <p>You hungry, sayless, I got you. Click the button below.</p>
+                                <a href="#" class="btn mt-3">Let's Feast</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-12 col-12">
+                            <div class="imgBox">
+                                <img src="images/plantain.webp" class="img-fluid animate__animated animate__fadeInRight" alt="Fresh Food">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 data-aos="fade-up">Why Choose NewBrain</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Discover what makes our products special</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-leaf fa-3x"></i>
+                        </div>
+                        <h3>100% Organic</h3>
+                        <p>All our products are made from natural ingredients without any artificial additives.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-heart fa-3x"></i>
+                        </div>
+                        <h3>Healthy Living</h3>
+                        <p>Promoting healthier lifestyles through nutritious and delicious food options.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-award fa-3x"></i>
+                        </div>
+                        <h3>Premium Quality</h3>
+                        <p>We maintain the highest standards in our production processes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Preview -->
+    <section class="products-section py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 data-aos="fade-up">Our Featured Products</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Taste the goodness of Ghana</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/coconut-oil.jpg" class="img-fluid" alt="Coconut Oil">
+                        </div>
+                        <div class="product-info p-3">
+                            <h4>Coconut Oil</h4>
+                            <p>Pure, cold-pressed coconut oil for cooking and skincare.</p>
+                            <a href="product.html" class="btn btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/shito.jpg" class="img-fluid" alt="Shito">
+                        </div>
+                        <div class="product-info p-3">
+                            <h4>Shito (Pepper Sauce)</h4>
+                            <p>Traditional Ghanaian pepper sauce with rich flavors.</p>
+                            <a href="product.html" class="btn btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/palm-oil.jpg" class="img-fluid" alt="Palm Oil">
+                        </div>
+                        <div class="product-info p-3">
+                            <h4>Palm Oil</h4>
+                            <p>Authentic red palm oil for traditional cooking.</p>
+                            <a href="product.html" class="btn btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/peanut-butter.jpg" class="img-fluid" alt="Peanut Butter">
+                        </div>
+                        <div class="product-info p-3">
+                            <h4>Peanut Butter</h4>
+                            <p>Creamy, natural peanut butter with no additives.</p>
+                            <a href="product.html" class="btn btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4" data-aos="fade-up">
+                <a href="product.html" class="btn btn-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 data-aos="fade-up">What Our Customers Say</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card p-4 h-100">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The coconut oil is absolutely pure and has so many uses. I use it for cooking and even as a moisturizer!"</p>
+                        <div class="customer">
+                            <strong>Adwoa Mensah</strong>
+                            <p>Accra, Ghana</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card p-4 h-100">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"The Shito reminds me of my grandmother's recipe. Authentic Ghanaian taste that can't be beaten."</p>
+                        <div class="customer">
+                            <strong>Kwame Asante</strong>
+                            <p>Kumasi, Ghana</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="testimonial-card p-4 h-100">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"I've been using NewBrain products for years. Consistent quality and excellent customer service."</p>
+                        <div class="customer">
+                            <strong>Esi Boateng</strong>
+                            <p>Tema, Ghana</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0" data-aos="fade-right">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>Get updates on new products, special offers and healthy living tips.</p>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email address">
+                            <button class="btn btn-dark" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h6>About</h6>
+                    <p>Welcome to NewBrain - Your Gateway to Healthy Living with Ghanaian Organic Foods. We're dedicated to promoting organic, locally-made foods from Ghana to support a healthy lifestyle.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="Contact_us.html">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h6>Products</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Coconut Oil</a></li>
+                        <li><a href="#">Shito</a></li>
+                        <li><a href="#">Palm Oil</a></li>
+                        <li><a href="#">Honey</a></li>
+                        <li><a href="#">Peanut Butter</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6>Contact Info</h6>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Organic Street, Accra, Ghana</li>
+                        <li><i class="fas fa-phone"></i> +233 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@newbrain.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">&copy; 2023 NewBrain. All Rights Reserved. 
+                        <a href="#">Created by Selorm Michael Dadedzi</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-mtn"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top animate__animated animate__fadeInUp"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+</html>

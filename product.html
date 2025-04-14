@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - NewBrain</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .products-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/products-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+        }
+        
+        .products-section {
+            padding: 80px 0;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            height: 100%;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .product-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .product-card:hover .product-img {
+            transform: scale(1.05);
+        }
+        
+        .product-info {
+            padding: 25px;
+        }
+        
+        .product-info h3 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .product-info .price {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 15px 0;
+        }
+        
+        .rating {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+        
+        .product-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .product-buttons .btn {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .btn-cart {
+            background: var(--primary-color);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-cart:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        .btn-details {
+            background: var(--secondary-color);
+            color: var(--dark-color);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-details:hover {
+            background: #e0a800;
+            transform: translateY(-3px);
+        }
+        
+        .categories {
+            margin-bottom: 40px;
+        }
+        
+        .category-btn {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .category-btn:hover, .category-btn.active {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><span class="text-danger">New</span><span class="text-warning">Brain</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link active" href="product.html">Products</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact_us.html">Contact Us</a>
+              </li>        
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section class="products-hero animate__animated animate__fadeIn">
+        <div class="container">
+            <h1 data-aos="fade-up">Our Products</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">Authentic Ghanaian organic foods</p>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="categories">
+                    <button class="btn category-btn active">All Products</button>
+                    <button class="btn category-btn">Oils</button>
+                    <button class="btn category-btn">Sauces</button>
+                    <button class="btn category-btn">Spreads</button>
+                    <button class="btn category-btn">Others</button>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-card">
+                        <img src="images/sobo.jpg" alt="Sobo Drink" class="product-img">
+                        <div class="product-info">
+                            <h3>Sobo Drink</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="ms-2">(24)</span>
+                            </div>
+                            <p>Refreshing hibiscus drink with natural ingredients and no artificial additives.</p>
+                            <div class="price">$3.99</div>
+                            <div class="product-buttons">
+                                <button class="btn btn-cart">Add to Cart</button>
+                                <button class="btn btn-details">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-card">
+                        <img src="images/shito.jpg" alt="Shito Sauce" class="product-img">
+                        <div class="product-info">
+                            <h3>Shito Sauce</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="ms-2">(42)</span>
+                            </div>
+                            <p>Traditional Ghanaian pepper sauce with rich flavors and perfect spice level.</p>
+                            <div class="price">$5.99</div>
+                            <div class="product-buttons">
+                                <button class="btn btn-cart">Add to Cart</button>
+                                <button class="btn btn-details">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-card">
+                        <img src="images/plantain.webp" alt="Plantain Chips" class="product-img">
+                        <div class="product-info">
+                            <h3>Plantain Chips</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2">(36)</span>
+                            </div>
+                            <p>Crispy plantain chips made from ripe plantains with a touch of sea salt.</p>
+                            <div class="price">$4.49</div>
+                            <div class="product-buttons">
+                                <button class="btn btn-cart">Add to Cart</button>
+                                <button class="btn btn-details">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-card">
+                        <img src="images/pine.jpg" alt="Pineapple Juice" class="product-img">
+                        <div class="product-info">
+                            <h3>Pineapple Juice</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="ms-2">(18)</span>
+                            </div>
+                            <p>100% natural pineapple juice with no added sugars or preservatives.</p>
+                            <div class="price">$3.49</div>
+                            <div class="product-buttons">
+                                <button class="btn btn-cart">Add to Cart</button>
+                                <button class="btn btn-details">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-card">
+                        <img src="images/Coconut-oil.jpg" alt="Coconut Oil" class="product-img">
+                        <div class="product-info">
+                            <h3>Coconut Oil</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="ms-2">(29)</span>
+                            </div>
+                            <p>Pure, cold-pressed coconut oil for cooking and skincare.</p>
+                            <div class="price">$7.99</div>
+                            <div class="product-buttons">
+                                <button class="btn btn-cart">Add to Cart</button>
+                                <button class="btn btn-details">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-card">
+                        <img src="images/palm oil.jpg" alt="Palm Oil" class="product-img">
+                        <div class="product-info">
+                            <h3>Palm Oil</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="ms-2">(12)</span>
+                            </div>
+                            <p>Authentic red palm oil for traditional Ghanaian cooking.</p>
+                            <div class="price">$6.49</div>
+                            <div class="product-buttons">
+                                <button class="btn btn-cart">Add to Cart</button>
+                                <button class="btn btn-details">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h6>About</h6>
+                    <p>Welcome to NewBrain - Your Gateway to Healthy Living with Ghanaian Organic Foods. We're dedicated to promoting organic, locally-made foods from Ghana to support a healthy lifestyle.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="Contact_us.html">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h6>Products</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Coconut Oil</a></li>
+                        <li><a href="#">Shito</a></li>
+                        <li><a href="#">Palm Oil</a></li>
+                        <li><a href="#">Honey</a></li>
+                        <li><a href="#">Peanut Butter</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6>Contact Info</h6>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Organic Street, Accra, Ghana</li>
+                        <li><i class="fas fa-phone"></i> +233 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@newbrain.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">&copy; 2023 NewBrain. All Rights Reserved. 
+                        <a href="#">Created by Selorm Michael Dadedzi</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-mtn"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top animate__animated animate__fadeInUp"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+
+    <!-- Shopping Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Your Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                    <div class="text-center py-4">
+                        <p>Your cart is empty</p>
+                    </div>
+                </div>
+                <div class="cart-total d-flex justify-content-between align-items-center mt-3">
+                    <h5>Total:</h5>
+                    <h5 class="total-price">$0.00</h5>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                <button type="button" class="btn btn-primary">Checkout</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cart Icon in Navbar -->
+<li class="nav-item">
+    <a class="nav-link cart-icon" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </a>
+</li>
+</body>
+</html>
