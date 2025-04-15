@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #8CC84B;
+    --primary-color: #8cc84b;
     --primary-dark: #6AA841;
-    --secondary-color: #FFC107;
+    --secondary-color: #fd8726;
     --dark-color: #262626;
     --light-color: #f7f5eb;
     --gray-color: #737373;
@@ -233,6 +233,19 @@ h1, h2, h3, h4, h5, h6 {
     .carousel-control-next {
         right: 15px;
     }
+}
+
+/* Make carousel controls always visible on hover */
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    opacity: 1;
+}
+
+/* Adjust default carousel control opacity */
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
 
 /* Loading animations */
